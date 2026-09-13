@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Jardín</title>
+  <meta name="description" content="Sitio sobre las plantas de mi jardín, agrupadas en plantas de interior y de exterior, con fichas de cuidado descargables en PDF.">
+  <link rel="stylesheet" href="estilosIA.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="encabezado">
+    <div class="contenedor barra-superior">
+      <a class="marca" href="#inicio">
+        <span class="icono-hoja" aria-hidden="true">🌿</span>
+        Mi Jardín
+      </a>
+      <nav class="nav-principal" aria-label="Principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#plantas-interior">Plantas de interior</a></li>
+          <li><a href="#plantas-exterior">Plantas de exterior</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ===================== INICIO ===================== -->
+    <section id="inicio" class="hero" tabindex="-1">
+      <div class="contenedor">
+        <h1>Bienvenido a Mi Jardín</h1>
+        <p>Un recorrido por las plantas que cultivo en casa, con fichas descargables sobre sus cuidados: luz, riego, temperatura y floración.</p>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Elegí una categoría</h2>
+        <p class="intro">Mis plantas están organizadas en dos grupos según dónde viven mejor. Seleccioná una tarjeta para ir al listado completo, con sus imágenes y la ficha en PDF de cada una.</p>
+
+        <div class="grid-categorias">
+          <a class="tarjeta-categoria" href="#plantas-interior">
+            <span class="emoji" aria-hidden="true">🪴</span>
+            <h3>Plantas de interior</h3>
+            <p>Ficus lira, lengua de suegra y potus: especies que se adaptan a la luz indirecta de los ambientes de casa.</p>
+            <span class="cta">Ver plantas de interior →</span>
+          </a>
+
+          <a class="tarjeta-categoria" href="#plantas-exterior">
+            <span class="emoji" aria-hidden="true">🌸</span>
+            <h3>Plantas de exterior</h3>
+            <p>Lavanda, malvón y rosal: especies que necesitan sol pleno y viven en el balcón o el jardín.</p>
+            <span class="cta">Ver plantas de exterior →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PLANTAS DE INTERIOR ===================== -->
+    <section id="plantas-interior" class="seccion seccion--alt" tabindex="-1">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Plantas de interior</h2>
+        <p class="intro">Especies que viven dentro de casa, en general con luz indirecta y riegos moderados a escasos. Descargá la ficha en PDF de cada una para ver el detalle completo de sus cuidados.</p>
+
+        <aside class="ficha-estilo" aria-label="Nota de estilo visual">
+          <h3>Cómo están armadas estas fichas</h3>
+          <p>Cada tarjeta de planta usa un <strong>borde sólido de 2px</strong> en tono terracota (<code>border: 2px solid #b5502f</code>), con un <strong>relleno interno de 1.25rem</strong> (<code>padding: 1.25rem</code>) para separar el contenido del borde y mejorar la lectura. Esta misma nota está enmarcada con un <strong>borde doble de 4px</strong> en verde musgo (<code>border: 4px double #4b5d3a</code>).</p>
+        </aside>
+
+        <div class="grid-plantas">
+          <article class="ficha-planta">
+            <div class="ficha-planta__imagen-wrap">
+              <img src="imagenes/ficus-lira.jpg" alt="Ficus lira de grandes hojas verdes en forma de violín">
+            </div>
+            <h3>Ficus lira</h3>
+            <p class="nombre-cientifico">Ficus lyrata</p>
+            <dl>
+              <dt>Luz</dt>
+              <dd>Brillante indirecta, sin sol directo intenso.</dd>
+              <dt>Riego</dt>
+              <dd>Moderado, cuando la capa superior del sustrato esté seca.</dd>
+            </dl>
+            <a class="boton-descarga" href="info/ficus-lira.pdf" download>
+              <span aria-hidden="true">📄</span> Descargar ficha en PDF
+            </a>
+          </article>
+
+          <article class="ficha-planta">
+            <div class="ficha-planta__imagen-wrap">
+              <img src="imagenes/lengua-de-suegra.jpg" alt="Lengua de suegra, con hojas altas, rígidas y puntiagudas">
+            </div>
+            <h3>Lengua de suegra</h3>
+            <p class="nombre-cientifico">Sansevieria trifasciata</p>
+            <dl>
+              <dt>Luz</dt>
+              <dd>Muy adaptable, de sombra parcial a sol directo moderado.</dd>
+              <dt>Riego</dt>
+              <dd>Escaso, dejando secar el sustrato por completo entre riegos.</dd>
+            </dl>
+            <a class="boton-descarga" href="info/lengua-de-suegra.pdf" download>
+              <span aria-hidden="true">📄</span> Descargar ficha en PDF
+            </a>
+          </article>
+
+          <article class="ficha-planta">
+            <div class="ficha-planta__imagen-wrap">
+              <img src="imagenes/potus.jpg" alt="Potus de hojas en forma de corazón cayendo en cascada">
+            </div>
+            <h3>Potus</h3>
+            <p class="nombre-cientifico">Epipremnum aureum</p>
+            <dl>
+              <dt>Luz</dt>
+              <dd>Indirecta media a baja; tolera ambientes con poca luz.</dd>
+              <dt>Riego</dt>
+              <dd>Moderado, aproximadamente cada 7 a 10 días.</dd>
+            </dl>
+            <a class="boton-descarga" href="info/potus.pdf" download>
+              <span aria-hidden="true">📄</span> Descargar ficha en PDF
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PLANTAS DE EXTERIOR ===================== -->
+    <section id="plantas-exterior" class="seccion" tabindex="-1">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Plantas de exterior</h2>
+        <p class="intro">Especies que necesitan sol pleno o media sombra luminosa, ideales para balcón, patio o jardín. Descargá la ficha en PDF de cada una para ver el detalle completo de sus cuidados.</p>
+
+        <aside class="ficha-estilo" aria-label="Nota de estilo visual">
+          <h3>Cómo están armadas estas fichas</h3>
+          <p>Cada tarjeta de planta usa un <strong>borde sólido de 2px</strong> en tono terracota (<code>border: 2px solid #b5502f</code>), con un <strong>relleno interno de 1.25rem</strong> (<code>padding: 1.25rem</code>) para separar el contenido del borde y mejorar la lectura. Esta misma nota está enmarcada con un <strong>borde doble de 4px</strong> en verde musgo (<code>border: 4px double #4b5d3a</code>).</p>
+        </aside>
+
+        <div class="grid-plantas">
+          <article class="ficha-planta">
+            <div class="ficha-planta__imagen-wrap">
+              <img src="imagenes/lavanda.jpg" alt="Tallos de lavanda rematados en espigas de flores violetas">
+            </div>
+            <h3>Lavanda</h3>
+            <p class="nombre-cientifico">Lavandula angustifolia</p>
+            <dl>
+              <dt>Luz</dt>
+              <dd>Sol pleno, muchas horas de luz directa.</dd>
+              <dt>Riego</dt>
+              <dd>Escaso; muy resistente a la sequía.</dd>
+            </dl>
+            <a class="boton-descarga" href="info/lavanda.pdf" download>
+              <span aria-hidden="true">📄</span> Descargar ficha en PDF
+            </a>
+          </article>
+
+          <article class="ficha-planta">
+            <div class="ficha-planta__imagen-wrap">
+              <img src="imagenes/malvon.jpg" alt="Malvón con hojas redondeadas y flores rosadas y coral">
+            </div>
+            <h3>Malvón (Geranio)</h3>
+            <p class="nombre-cientifico">Pelargonium sp.</p>
+            <dl>
+              <dt>Luz</dt>
+              <dd>Sol pleno a media sombra luminosa.</dd>
+              <dt>Riego</dt>
+              <dd>Moderado, cuando el sustrato esté seco al tacto.</dd>
+            </dl>
+            <a class="boton-descarga" href="info/malvon.pdf" download>
+              <span aria-hidden="true">📄</span> Descargar ficha en PDF
+            </a>
+          </article>
+
+          <article class="ficha-planta">
+            <div class="ficha-planta__imagen-wrap">
+              <img src="imagenes/rosal.jpg" alt="Arbusto de rosal con flores rojas y rosadas en capas de pétalos">
+            </div>
+            <h3>Rosal</h3>
+            <p class="nombre-cientifico">Rosa sp.</p>
+            <dl>
+              <dt>Luz</dt>
+              <dd>Sol pleno directo, al menos 6 horas diarias.</dd>
+              <dt>Riego</dt>
+              <dd>Regular, 2 a 3 veces por semana en verano.</dd>
+            </dl>
+            <a class="boton-descarga" href="info/rosal.pdf" download>
+              <span aria-hidden="true">📄</span> Descargar ficha en PDF
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SOBRE MÍ ===================== -->
+    <section id="sobre-mi" class="seccion seccion--alt" tabindex="-1">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Sobre mí</h2>
+
+        <article class="perfil">
+          <div class="perfil__avatar" aria-hidden="true">🌱</div>
+          <div class="perfil__texto">
+            <h3>Juan Segobia</h3>
+            <p>Hola, soy Juan. Mantengo este sitio como catálogo personal de las plantas que cultivo en casa, tanto de interior como de exterior. Me gusta documentar sus cuidados y compartir lo que voy aprendiendo sobre jardinería.</p>
+
+            <ul class="lista-datos">
+              <li><strong>Ocupación:</strong> Estudiante de Analista Programador Universitario</li>
+              <li><strong>Formación adicional:</strong> Estudiante de Ciencia de Datos en Organizaciones</li>
+              <li><strong>Rol en el sitio:</strong> Autor y responsable del mantenimiento del contenido</li>
+              <li><strong>Tecnologías del sitio:</strong> HTML5 semántico y CSS3, sin JavaScript</li>
+            </ul>
+
+            <p>Este proyecto también es un ejercicio de accesibilidad web: busca ser navegable por teclado, compatible con lectores de pantalla y utilizable con el zoom del navegador al 200% sin romper el diseño.</p>
+
+            <p>¿Tenés alguna consulta o sugerencia sobre alguna planta? Escribime desde la <a href="#contacto">sección de contacto</a>.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACTO ===================== -->
+    <section id="contacto" class="seccion" tabindex="-1">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Contacto</h2>
+        <p class="intro">¿Preguntas sobre alguna planta o sobre el sitio? Completá el formulario y me pondré en contacto.</p>
+
+        <form class="formulario" action="mailto:contacto@mijardin.com" method="post" enctype="text/plain">
+          <fieldset>
+            <legend>Datos de contacto</legend>
+
+            <div class="campo">
+              <label for="nombre">Nombre y apellido</label>
+              <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+            </div>
+
+            <div class="campo">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+
+            <div class="campo">
+              <label for="telefono">Teléfono <span class="ayuda">(opcional)</span></label>
+              <input type="tel" id="telefono" name="telefono" autocomplete="tel">
+            </div>
+
+            <div class="campo">
+              <label for="asunto">Asunto</label>
+              <select id="asunto" name="asunto" required>
+                <option value="">Seleccioná una opción</option>
+                <option value="consulta-planta">Consulta sobre una planta</option>
+                <option value="sugerencia">Sugerencia para el sitio</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+
+            <div class="campo">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" required></textarea>
+            </div>
+
+            <button type="submit" class="boton">Enviar mensaje</button>
+          </fieldset>
+        </form>
+        <p class="nota-formulario">Este formulario es una demostración estática (sitio sin backend ni scripts): al enviarlo, tu cliente de correo abrirá un mensaje dirigido a contacto@mijardin.com con los datos cargados.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <p>Mi Jardín — Catálogo personal de plantas.</p>
+      <p>Hecho con HTML5 y CSS3, accesible y responsivo. Sin scripts.</p>
+    </div>
+  </footer>
+</body>
+</html>
